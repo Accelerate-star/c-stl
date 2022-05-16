@@ -3,17 +3,17 @@
 #include <cstring>
 using namespace std;
 int main () {
-	//°ÑcharÀàÐÍµÄ0±äÎª1£¬1±äÎª0 £» 
+	//æŠŠcharç±»åž‹çš„0å˜ä¸º1ï¼Œ1å˜ä¸º0 ï¼› 
 	char a = '1', b = '0';
 	a ^= 1; b ^= 1;
 	cout << a << endl << b;
 	
-	//¹þÂü¶Ù¾àÀë»ò³ö×â³µ¼¸ºÎ 
-	//ÓÃÒÔ±êÃ÷Á½¸öµãÔÚ±ê×¼×ø±êÏµÉÏµÄ¾ø¶ÔÖá¾à×ÜºÍ¡£
+	//å“ˆæ›¼é¡¿è·ç¦»æˆ–å‡ºç§Ÿè½¦å‡ ä½• 
+	//ç”¨ä»¥æ ‡æ˜Žä¸¤ä¸ªç‚¹åœ¨æ ‡å‡†åæ ‡ç³»ä¸Šçš„ç»å¯¹è½´è·æ€»å’Œã€‚
 	d = abs(dx1-dx2) + abs(dy1-dy2);
 	
 	
-	//ÇØ¾ÅÉØËã·¨ =¡·½«b½øÖÆÊý×ªÎªÊ®½øÖÆ
+	//ç§¦ä¹éŸ¶ç®—æ³• =ã€‹å°†bè¿›åˆ¶æ•°è½¬ä¸ºåè¿›åˆ¶
 	int get(string s, int b) {
 		int res = 0;
 		
@@ -23,34 +23,34 @@ int main () {
 		return res;
 	}
 	
-	//Á¬Í¨¿éÒ»°ãÓÃËÑË÷ËÑ³öÀ´´æÈ¡£¬flood fill : dfs/bfs 
+	//è¿žé€šå—ä¸€èˆ¬ç”¨æœç´¢æœå‡ºæ¥å­˜å–ï¼Œflood fill : dfs/bfs 
 	
-	´ÓÒ»¸öÊý×ÖµÃµ½×ø±ê  /  ºÍ   % 
-	
-	
-	exit(0);//¿ÉÒÔÓÃÀ´µ÷ÊÔÖ¸Õë´íÎó£»³ÌÐòÖ´ÐÐÍêÖ±½ÓÍË³ö£» 
-	//´ò±íÕÒ¹æÂÉ 
+	ä»Žä¸€ä¸ªæ•°å­—å¾—åˆ°åæ ‡  /  å’Œ   % 
 	
 	
-	//Èç¹ûa,b¾ùÊÇÕýÕûÊýÇÒ»¥ÖÊ£¬ÄÇÃ´ÓÉax+by,x >=0,y>=0²»ÄÜ´Õ³öµÄ×î´óÊýÊÇ
+	exit(0);//å¯ä»¥ç”¨æ¥è°ƒè¯•æŒ‡é’ˆé”™è¯¯ï¼›ç¨‹åºæ‰§è¡Œå®Œç›´æŽ¥é€€å‡ºï¼› 
+	//æ‰“è¡¨æ‰¾è§„å¾‹ 
+	
+	
+	//å¦‚æžœa,bå‡æ˜¯æ­£æ•´æ•°ä¸”äº’è´¨ï¼Œé‚£ä¹ˆç”±ax+by,x >=0,y>=0ä¸èƒ½å‡‘å‡ºçš„æœ€å¤§æ•°æ˜¯
 	//(a-1)(b-1) -1 
 	
 	
-	//ÅÐ¶ÏÁ½¸ö¸¡µãÊýÊÇ·ñÏàµÈ£¬Ôòdouble a, double b;
-	if (abs(a-b) > 1e-8) ÏàµÈ
-	else ²»ÏàµÈ 
+	//åˆ¤æ–­ä¸¤ä¸ªæµ®ç‚¹æ•°æ˜¯å¦ç›¸ç­‰ï¼Œåˆ™double a, double b;
+	if (abs(a-b) > 1e-8) ç›¸ç­‰
+	else ä¸ç›¸ç­‰ 
 	
-	//printf²¹Ç°µ¼0
+	//printfè¡¥å‰å¯¼0
 	printf("%019d", a);
-	//Ö¸Êä³öµÄÎ»ÊýÎª19Î»£¬Èç¹û²»×ãÔò²¹0,°üÀ¨¸ºÊýµÄ·ûºÅ 
+	//æŒ‡è¾“å‡ºçš„ä½æ•°ä¸º19ä½ï¼Œå¦‚æžœä¸è¶³åˆ™è¡¥0,åŒ…æ‹¬è´Ÿæ•°çš„ç¬¦å· 
 	
-	algorithmÖÐµÄnext_permutation(a, a+n)ºÍº¯Êýprev_permutation(a, a+n)//Êý×ÖºÍ×Ö·û¶¼¿É 
-	ÊµÏÖ×ÖµäÐòÉýÐòºÍ½µÐòµÄÈ«ÅÅÁÐ£¬Ê±¼ä¸´ÔÓ¶ÈO(n) 
+	algorithmä¸­çš„next_permutation(a, a+n)å’Œå‡½æ•°prev_permutation(a, a+n)//æ•°å­—å’Œå­—ç¬¦éƒ½å¯ 
+	å®žçŽ°å­—å…¸åºå‡åºå’Œé™åºçš„å…¨æŽ’åˆ—ï¼Œæ—¶é—´å¤æ‚åº¦O(n) 
 	
-	Èç¹ûÓÃdfsÊµÏÖÈ«ÅÅÁÐ£¬ÔòÊ±¼ä¸´ÔÓ¶ÈO(n!) 
+	å¦‚æžœç”¨dfså®žçŽ°å…¨æŽ’åˆ—ï¼Œåˆ™æ—¶é—´å¤æ‚åº¦O(n!) 
 	
 	
-	//´ò±í 
+	//æ‰“è¡¨ 
 #include<iostream>
 #include<cmath>
 using namespace std;
@@ -59,20 +59,20 @@ int h[N];
 int main() {
     int n;
     cin >> n;
-    //´ò±í£¬ÕÒ³ö1 - n£¬ËùÓÐÍêÈ«Æ½·½ÊýÁ½Á½Ö®ºÍ£¬Èç¹û´æÔÚÖ»¼ÇµÚÒ»´Î³öÏÖ£¨ÌâÄ¿ÒªÇóÕÒ³ö×ÖµäÐòÐ¡µÄ£©
+    //æ‰“è¡¨ï¼Œæ‰¾å‡º1 - nï¼Œæ‰€æœ‰å®Œå…¨å¹³æ–¹æ•°ä¸¤ä¸¤ä¹‹å’Œï¼Œå¦‚æžœå­˜åœ¨åªè®°ç¬¬ä¸€æ¬¡å‡ºçŽ°ï¼ˆé¢˜ç›®è¦æ±‚æ‰¾å‡ºå­—å…¸åºå°çš„ï¼‰
     for (int i = 0; i * i * 2<= n; i++) {
         for (int j = i; j * j + i * i <= n; j++) {
             if (!h[i * i + j * j])
-                h[i * i + j * j] = i + 1;//·ÀÖ¹i = 0Ê±ÔÚºóÃæÅÐ¶Ï²éÕÒÌø¹ý i = 0µÄÇé¿ö
+                h[i * i + j * j] = i + 1;//é˜²æ­¢i = 0æ—¶åœ¨åŽé¢åˆ¤æ–­æŸ¥æ‰¾è·³è¿‡ i = 0çš„æƒ…å†µ
         }
     }
-    //0<= a <= b <= c <= d,¿ÉÒÔµÃ³öa^2 <= n / 4, a^2 + b^ 2 <= n / 2; 
+    //0<= a <= b <= c <= d,å¯ä»¥å¾—å‡ºa^2 <= n / 4, a^2 + b^ 2 <= n / 2; 
     for (int i = 0; i * i * 4 <= n; i++) {
         for (int j = i; j * j + i * i <= n / 2; j++) {
             int t = n - i * i - j * j;
             if (h[t]) {
                 int c = h[t] - 1;   
-                //·ÀÖ¹¿ª¸ùºÅºóÒòÎª¾«¶È¹ØÏµ,ÏòÏÂÈ¡Õû,Àý:25 ¿ª¸ùºÅµÃµ½4.99999ÏòÏÂÈ¡ÕûÎª4;
+                //é˜²æ­¢å¼€æ ¹å·åŽå› ä¸ºç²¾åº¦å…³ç³»,å‘ä¸‹å–æ•´,ä¾‹:25 å¼€æ ¹å·å¾—åˆ°4.99999å‘ä¸‹å–æ•´ä¸º4;
                 int d = (sqrt(t - c * c) + 1e-4);
                 printf("%d %d %d %d", i, j, c, d);
                 return 0;
@@ -82,14 +82,10 @@ int main() {
     return 0;
 }
 
-×÷Õß£ºÒ»»¨Ò»ÊÀ½ç
-Á´½Ó£ºhttps://www.acwing.com/solution/content/6927/
-À´Ô´£ºAcWing
-Öø×÷È¨¹é×÷ÕßËùÓÐ¡£ÉÌÒµ×ªÔØÇëÁªÏµ×÷Õß»ñµÃÊÚÈ¨£¬·ÇÉÌÒµ×ªÔØÇë×¢Ã÷³ö´¦¡£
 
 
-¿Õ¼ä»»Ê±¼ä 
+ç©ºé—´æ¢æ—¶é—´ 
 
-//string²»ÄÜÓÐ¿Õ¸ñ,ÓÐ¿Õ¸ñ´ú±íÊäÈëÁËÏÂÒ»¸östring 
+//stringä¸èƒ½æœ‰ç©ºæ ¼,æœ‰ç©ºæ ¼ä»£è¡¨è¾“å…¥äº†ä¸‹ä¸€ä¸ªstring 
 	return 0;
 }
